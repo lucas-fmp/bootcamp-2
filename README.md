@@ -3,7 +3,7 @@
 Extensão simples e funcional para o Bootcamp II, com popup (UI), service worker (background) e content script opcional para demonstrar injeção de código em páginas específicas.
 
 - Manifest: MV3, sem dependências de Node no runtime da extensão.
-- Permissões enxutas: `storage`, `tabs` e `host_permissions` amplos (ajuste conforme o escopo real).
+- Permissões enxutas: `storage`, `tabs` e `host_permissions` amplos.
 - Compatível com Chrome 114+.
 - Landing page do projeto em `docs/` (GitHub Pages).
 
