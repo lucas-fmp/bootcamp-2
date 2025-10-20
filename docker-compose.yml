@@ -1,0 +1,12 @@
+services:
+  e2e:
+    build: .
+    image: bootcamp/helper-e2e:latest
+    environment:
+      - CI=true
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command: /bin/bash -lc "xvfb-run --auto-servernum -- npm run test"
+    shm_size: 2gb
+    user: "${UID:-1000}:${GID:-1000}"

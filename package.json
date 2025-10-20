@@ -1,0 +1,17 @@
+{
+  "name": "bootcamp-helper-extension",
+  "version": "1.0.0",
+  "description": "Extensão Chrome MV3 com build automatizado, testes E2E e pipeline CI.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-extension.mjs",
+    "test:e2e": "playwright test --reporter=list,html",
+    "test": "npm run build && npm run test:e2e",
+    "ci": "npm ci && npm run test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "archiver": "^7.0.0"
+  }
+}
